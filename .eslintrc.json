@@ -1,0 +1,40 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier",
+        "plugin:node/recommended",
+        "plugin:wdio/recommended"
+    ],
+    "plugins": ["prettier", "wdio"],
+    "rules": {
+        "class-methods-use-this": "off",
+        "consistent-return": "off",
+        "func-names": "off",
+        "indent": ["error", "tab"],
+        "no-console": "warn",
+        "no-process-exit": "off",
+        "no-param-reassign": "off",
+        "no-underscore-dangle": "off",
+        "no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "req|res|next|val|err"
+            }
+        ],
+        "node/no-unpublished-require": "off",
+        "object-shorthand": "off",
+        "prefer-destructuring": ["error", { "object": true, "array": false }],
+        "prettier/prettier": "error",
+        "spaced-comment": "off"
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "es2017": true,
+        "es2020": true,
+        "jquery": true,
+        "node": true,
+        "mocha": true
+    }
+}
